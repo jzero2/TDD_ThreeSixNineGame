@@ -31,6 +31,14 @@ public class ThreeSixNineGameTest {
         assertClaps(13, "XO");
     }
 
+    @Test
+    @DisplayName("세 자리 test")
+    void claps_three_digits() throws Exception {
+        assertClaps(133, "XOO");
+        assertClaps(100, "XXX");
+        assertClaps(369, "OOO");
+    }
+
     private void assertClaps(int i, String x) {
         assertThat(game.claps(i), is(x));
     }
