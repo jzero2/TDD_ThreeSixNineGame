@@ -19,6 +19,8 @@ public class ThreeSixNineGameTest {
         assertThat(game.claps(1), is("X"));
         assertThat(game.claps(3), is("O"));
         assertThat(game.claps(6), is("O"));
+        assertThat(game.claps(8), is("X"));
+        assertThat(game.claps(9), is("O"));
     }
 
 }
