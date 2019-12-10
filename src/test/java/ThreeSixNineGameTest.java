@@ -18,6 +18,7 @@ public class ThreeSixNineGameTest {
     public void claps_one_digits() {
         assertThat(game.claps(1), is("X"));
         assertThat(game.claps(3), is("O"));
+        assertThat(game.claps(6), is("O"));
     }
 
 }
