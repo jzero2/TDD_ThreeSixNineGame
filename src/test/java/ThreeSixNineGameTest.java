@@ -23,6 +23,13 @@ public class ThreeSixNineGameTest {
         assertClaps(9, "O");
     }
 
+    @Test
+    @DisplayName("두 자리 test")
+    public void claps_two_digits() {
+        assertClaps(10, "X");
+        assertClaps(13, "O");
+    }
+
     private void assertClaps(int i, String x) {
         assertThat(game.claps(i), is(x));
     }
