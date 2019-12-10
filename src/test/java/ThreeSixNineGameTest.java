@@ -16,11 +16,15 @@ public class ThreeSixNineGameTest {
     @Test
     @DisplayName("한 자리 test")
     public void claps_one_digits() {
-        assertThat(game.claps(1), is("X"));
-        assertThat(game.claps(3), is("O"));
-        assertThat(game.claps(6), is("O"));
-        assertThat(game.claps(8), is("X"));
-        assertThat(game.claps(9), is("O"));
+        assertClaps(1, "X");
+        assertClaps(3, "O");
+        assertClaps(6, "O");
+        assertClaps(8, "X");
+        assertClaps(9, "O");
+    }
+
+    private void assertClaps(int i, String x) {
+        assertThat(game.claps(i), is(x));
     }
 
 }
