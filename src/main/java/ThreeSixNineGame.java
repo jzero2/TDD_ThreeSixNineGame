@@ -9,11 +9,7 @@ public class ThreeSixNineGame {
         }
 
         if (i/10 > 0) {
-            remainder = i/10;
-            if (remainder > 0 && remainder % 3 == 0)
-                result = "O" + result ;
-            else
-                result = "X" + result;
+            result = claps(i/10) + result;
         }
 
         return result;
