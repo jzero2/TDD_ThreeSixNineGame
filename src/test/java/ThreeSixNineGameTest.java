@@ -17,6 +17,7 @@ public class ThreeSixNineGameTest {
     @DisplayName("한 자리 test")
     public void claps_one_digits() {
         assertThat(game.claps(1), is("X"));
+        assertThat(game.claps(3), is("O"));
     }
 
 }
