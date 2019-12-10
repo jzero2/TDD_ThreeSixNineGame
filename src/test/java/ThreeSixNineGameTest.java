@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -26,8 +27,8 @@ public class ThreeSixNineGameTest {
     @Test
     @DisplayName("두 자리 test")
     public void claps_two_digits() {
-        assertClaps(10, "X");
-        assertClaps(13, "O");
+        assertClaps(10, "XX");
+        assertClaps(13, "XO");
     }
 
     private void assertClaps(int i, String x) {
